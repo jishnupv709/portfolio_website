@@ -1520,7 +1520,7 @@ section,
   font-weight: 600;
 }
 
-.status-badge {
+.status-badge-completed {
   background: #eaf6ea; /* Light green background */
   color: #28a745; /* Dark green text */
   padding: 4px 10px;
@@ -1534,8 +1534,27 @@ section,
 }
 
 /* Emoji spacing */
-.status-badge::before {
+.status-badge-completed::before {
   content: "✅";
+  font-size: 14px;
+  margin-right: 4px;
+}
+.status-badge-pending {
+  background: #fff3cd; /* Light yellow background */
+  color: #856404; /* Dark yellow text */
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #856404;
+}
+
+/* Emoji spacing */
+.status-badge-pending::before {
+  content: "⏳"; /* Hourglass emoji for pending */
   font-size: 14px;
   margin-right: 4px;
 }
