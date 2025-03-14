@@ -1454,6 +1454,88 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+/* Additional CSS */
+.project-showcase {
+  border-left: 4px solid #007bff;  /* Blue left border */
+  background: #ffffff;
+  padding: 20px;  /* Reduced padding for compact height */
+  margin: 10px 0;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left; /* Aligning title to the left */
+}
+
+.project-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.tech-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 8px;
+  justify-content: start; /* Aligning badges to the left */
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tech-stack .badge {
+  font-size: 13px;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.status-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.status-label {
+  color: #444;
+  font-weight: 600;
+}
+
+.status-badge {
+  background: #eaf6ea; /* Light green background */
+  color: #28a745; /* Dark green text */
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #28a745;
+}
+
+/* Emoji spacing */
+.status-badge::before {
+  content: "✅";
+  font-size: 14px;
+  margin-right: 4px;
 }
